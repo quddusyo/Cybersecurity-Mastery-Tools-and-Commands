@@ -2,13 +2,15 @@
 Tools to Master for Cybersecurity Cheat Sheet
 
 
-# 🔧 Netcat (nc) Command Reference
+
+
+## 🔧 Netcat (nc) Command Reference
 
 Netcat (often abbreviated `nc`) is a lightweight, low-level network utility used for reading, writing, and piping data across TCP/UDP connections. It’s often called the **"Swiss Army Knife"** of networking.
 
 ---
 
-## 📦 Installation
+### 📦 Installation
 
 **Debian/Ubuntu:**
 
@@ -24,9 +26,9 @@ sudo yum install nc
 
 ---
 
-## ⚡ Basic Usage
+### ⚡ Basic Usage
 
-### 🗣️ Simple Chat (TCP connection)
+#### 🗣️ Simple Chat (TCP connection)
 
 **On the server (listener):**
 
@@ -42,7 +44,7 @@ nc <server_ip> 1234
 
 ---
 
-## 🔍 Port Scanning
+### 🔍 Port Scanning
 
 ```bash
 nc -zv <target_ip> 1-1000
@@ -53,15 +55,15 @@ nc -zv <target_ip> 1-1000
 
 ---
 
-## 📁 File Transfer
+### 📁 File Transfer
 
-### ⬆️ Send File:
+#### ⬆️ Send File:
 
 ```bash
 nc <receiver_ip> 4444 < file.txt
 ```
 
-### ⬇️ Receive File:
+#### ⬇️ Receive File:
 
 ```bash
 nc -lvp 4444 > received.txt
