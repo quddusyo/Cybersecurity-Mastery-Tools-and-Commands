@@ -155,3 +155,6 @@ Netcat is extremely powerful but also potentially dangerous. Always use it ethic
 ---
 
 > 🧠 Save this as a quick reference and use it responsibly in your labs, CTFs, and red team exercises.
+> ------------------------------------------------------------------------------------------------------
+> ##NMAP Usage docs:
+> 
