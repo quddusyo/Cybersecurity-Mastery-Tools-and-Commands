@@ -1,0 +1,30 @@
+# Cybersecurity-Mastery-Tools-and-Commands
+Pentest Cybersecurity Cheat Sheet
+
+
+
+
+## 3 Types of Discovery:
+1. Manualy
+2. Automated
+3. OSINT
+
+View 
+
+---
+
+### 📦 Installation
+
+**Debian/Ubuntu:**
+
+```bash
+sudo apt install netcat
+```
+
+**RHEL/CentOS:**
+
+```bash
+sudo yum install nc
+```
+
+---
