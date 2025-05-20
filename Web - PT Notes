@@ -9,22 +9,21 @@ Pentest Cybersecurity Cheat Sheet
 2. Automated
 3. OSINT
 
-View 
+To Find out frameword being used by the favicon, check the md5 checksum against OWASP favicon database:
+https://wiki.owasp.org/index.php/OWASP_favicon_database
 
----
+### Run
 
-### 📦 Installation
-
-**Debian/Ubuntu:**
-
-```bash
-sudo apt install netcat
+```curl
+curl https://website.com/favicon/images/favicon.ico | md5sum
 ```
 
-**RHEL/CentOS:**
+Note: Make sure to change website.com/ to the path of the favicon and check md5 against the OWASP database, if the hash ends with 427e, then your hash failed and you should try again.
 
-```bash
-sudo yum install nc
+You can also run this for powershell:
+
+```Powershell
+curl https:/website.com/favicon/images/favicon.ico -UseBasicParsing -o favicon.ico
+Get-FileHash .\favicon.ico -Algorithm MD5
 ```
-
 ---
